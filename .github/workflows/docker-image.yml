@@ -18,5 +18,5 @@ jobs:
       env:
           VA: "TEST"
       run: |
-        echo "TEST VAR: ${{ vars.${VA} }}"
+        echo "TEST VAR: ${{ vars.$VA }}"
 #      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)

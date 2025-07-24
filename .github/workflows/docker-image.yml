@@ -16,5 +16,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build the Docker image
       run: |
-        echo "AAAAA"
+        echo "TEST VAR: ${{ vars.TEST}}"
 #      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
